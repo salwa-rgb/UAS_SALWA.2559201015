@@ -59,3 +59,62 @@ h2 { font-size: clamp(1.5rem, 4vw, 2.2rem); }
 h3 { font-size: 1.1rem; }
 
 p { color: var(--warna-teks-muda); }
+section {
+  padding: 80px 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section + section {
+  border-top: 1px solid var(--warna-border);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(45, 0, 7, 0.93);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--warna-border);
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: var(--font-judul);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--warna-teks);
+  text-decoration: none;
+}
+
+.logo span {
+  color: #FF6B6B;
+}
+
+nav ul {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: var(--warna-teks-muda);
+  transition: all 0.2s ease;
+}
+
+nav ul li a:hover {
+  background-color: var(--warna-utama);
+  color: white;
+  text-decoration: none;
+}
