@@ -53,6 +53,9 @@ h1 {
 h2 {
     font-size: 2rem;
 }
+h3 {
+    font-size: 1.5rem;
+}
 p {
     color: var(--warna-teks-muda);
 }
@@ -174,6 +177,10 @@ nav ul li a:hover {
 .btn-hero:hover {
     opacity: 0.85;
     transform: translateY(-2px);
+}
+
+.hero-image {
+  flex-shrink: 0;
 }
 
 .hero-image img{
